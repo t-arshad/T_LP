@@ -1,0 +1,26 @@
+#########
+
+##########
+cd ~/T_LP
+rm -rf T_bash
+git clone git@github.com:t-arshad/T_bash.git
+cd ~
+rm -rf .bashrc
+rm -rf .bash_aliases
+ln -s ~/T_LP/T_bash/.bashrc ~/.bashrc
+ln -s ~/T_LP/T_bash/.bash_aliases ~/.bash_aliases
+echo
+echo
+echo Do you want to install PS1/Bash themer? Y/N
+read ps1yn
+rm -rf ~/T_LP/PS1themer
+cd ~/T_LP
+git clone git@github.com:t-arshad/PS1themer.git
+echo
+echo
+echo Do you want to install Linux_Toolbox? Y/N
+read ps1yn
+rm -rf ~/T_LP/T_Linux_Toolbox
+cd ~/T_LP
+git clone git@github.com:t-arshad/T_Linux_Toolbox.git
+
