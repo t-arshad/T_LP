@@ -1,6 +1,19 @@
-#########
-
-##########
+clear
+echo
+echo Do you need to generate ssh key? Y/N
+read sshyn
+if [ "$sshyn" = "y" ]; then
+cd ~
+ssh-keygen -q -t rsa -N '' <<< $'\ny' >/dev/null 2>&1
+clear
+echo
+echo Here is your SSH key. Please add it to github and press any key
+echo
+echo
+cat ~/.ssh/id_rsa.pub
+read xyz
+fi
+clear
 cd ~/T_LP
 rm -rf T_bash
 git clone git@github.com:t-arshad/T_bash.git
@@ -13,14 +26,18 @@ echo
 echo
 echo Do you want to install PS1/Bash themer? Y/N
 read ps1yn
+if [ "$ps1yn" = "y" ]; then
 rm -rf ~/T_LP/PS1themer
 cd ~/T_LP
 git clone git@github.com:t-arshad/PS1themer.git
+fi
 echo
 echo
 echo Do you want to install Linux_Toolbox? Y/N
-read ps1yn
+read ltyn
+if [ "$ltyn" = "y" ]; then
 rm -rf ~/T_LP/T_Linux_Toolbox
 cd ~/T_LP
 git clone git@github.com:t-arshad/T_Linux_Toolbox.git
+fi
 
