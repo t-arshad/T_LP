@@ -1,4 +1,5 @@
 clear
+git remote set-url origin git@github.com:t-arshad/T_LP.git
 echo
 echo Do you need to generate ssh key? Y/N
 read sshyn
