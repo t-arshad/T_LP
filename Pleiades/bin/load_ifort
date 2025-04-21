@@ -1,0 +1,11 @@
+module purge
+module load comp-intel
+module load mpi-hpe/mpt
+module load gcc/9.3
+module load idl/8.9
+module load paraview/5.9.1
+module load petsc
+module load hdf5/1.8.18_mpt
+
+module use -a /swbuild/analytix/tools/modulefiles
+module load miniconda3/v4
