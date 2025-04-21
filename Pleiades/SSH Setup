@@ -18,4 +18,5 @@ Add SSH Key
 ssh-copy-id pfe
 Remove
 Just delete the .ssh/authorized_keys
+rm -rf ~/.ssh/authorized_keys
 
