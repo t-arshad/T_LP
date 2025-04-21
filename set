@@ -41,4 +41,15 @@ rm -rf ~/T_LP/T_Linux_Toolbox
 cd ~/T_LP
 git clone git@github.com:t-arshad/T_Linux_Toolbox.git
 fi
+echo
+echo
+echo Do you want to install SSH Pack? Y/N
+read sshyn
+if [ "$ltyn" = "y" ]; then
+rm -rf ~/T_LP/SSH
+cd ~/T_LP
+git clone git@github.com:t-arshad/SSH.git
+rm -rf ~/.ssh/config
+ln -s ~/T_LP/SSH/config ~/.ssh/config
+fi
 
