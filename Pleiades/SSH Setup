@@ -8,7 +8,7 @@ ssh tarshad@sfe8.nas.nasa.gov ssh-key-init --set < ~/.ssh/id_rsa.pub
 IN LOGGED IN STATE
 -------------------
 Remove all SSH keys
-ssh-key-init --remove=AAA
+ssh-key-init --remove=ssh-rsa
 Check all SSH keys
 ssh-key-init --get
 
