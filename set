@@ -45,7 +45,7 @@ echo
 echo
 echo Do you want to install SSH Pack? Y/N
 read sshyn
-if [ "$ltyn" = "y" ]; then
+if [ "$sshyn" = "y" ]; then
 rm -rf ~/T_LP/SSH
 cd ~/T_LP
 git clone git@github.com:t-arshad/SSH.git
