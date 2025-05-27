@@ -57,5 +57,6 @@ cd ~/T_LP
 git clone git@github.com:t-arshad/SSH.git
 rm -rf ~/.ssh/config
 ln -s ~/T_LP/SSH/config ~/.ssh/config
+chmod 600 ~/.ssh/*
 fi
 
