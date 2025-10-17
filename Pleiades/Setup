@@ -3,8 +3,10 @@ SSH key is different for SFE and PFE/Lou
 
 SFE
 
-Add SSH key
+Replace SSH keys with current key
 ssh tarshad@sfe8.nas.nasa.gov ssh-key-init --set < ~/.ssh/id_rsa.pub
+Add SSH key
+ssh tarshad@sfe8.nas.nasa.gov ssh-key-init --add < ~/.ssh/id_rsa.pub
 
 IN LOGGED IN STATE
 -------------------
